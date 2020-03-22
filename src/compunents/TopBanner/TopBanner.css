@@ -1,0 +1,22 @@
+.Top-Banner{
+    background-image: url(../../ICON/bannerbackground.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:500px;
+}
+.search-food{
+    padding-top:120px;
+}
+.search{
+    width:50%;
+}
+.search-box{
+    text-align: center;
+}
+.search-btn{
+    color:white;
+    background-color: rgba(255, 0, 106, 0.945);
+    border-radius: 20px;
+    border:1px solid lightgray;
+    width:110px;
+}
