@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import './Foods.css';
 
-function Foods () {
-    const [foods, setFoods] = useState([]);
-    useEffect(() => {
-        fetch('https://drive.google.com/open?id=1uecCZcs4boIc2WFLlygqW7loc6Rfkmkh')
-        .then(res => res.json())
-        .then(data => setFoods(data));
-        console.log(foods);
-    },[ ])
+const Foods = (props) => {
+    const { img, name, description, price } = props.foods;
     return (
         <div>
-            <h4>Food Quantiti: {foods.length}</h4>
-            <h4>foods Name : {foods.name}</h4>
+            <div className="foods">
+                <div className="food-cart">
+                    <img src={img} alt="" />
+                    <h4>{name}</h4>
+                    <h5>{description}</h5>
+                    <h3>${price}</h3>
+                </div>
+            </div>
+            
         </div>
     );
 };
